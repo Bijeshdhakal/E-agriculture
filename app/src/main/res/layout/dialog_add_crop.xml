@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/mainMargin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_bold"
+        android:paddingLeft="@dimen/mainMargin"
+        android:paddingRight="@dimen/mainMargin"
+        android:text="Produced Goods in Kg"
+        android:textColor="@color/colorBlack" />
+
+    <EditText
+        android:id="@+id/producedGoodsET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:fontFamily="@font/proximanova_regular"
+        android:hint="Produced Goods in Kg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_bold"
+        android:paddingLeft="@dimen/mainMargin"
+        android:paddingRight="@dimen/mainMargin"
+        android:text="Sold Goods in Kg"
+        android:textColor="@color/colorBlack" />
+
+    <EditText
+        android:id="@+id/soldGoodsET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:fontFamily="@font/proximanova_regular"
+        android:hint="Sold Goods in Kg" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_bold"
+        android:paddingLeft="@dimen/mainMargin"
+        android:paddingRight="@dimen/mainMargin"
+        android:text="Expense"
+        android:textColor="@color/colorBlack" />
+
+    <EditText
+        android:id="@+id/expenseET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:fontFamily="@font/proximanova_regular"
+        android:hint="Expense in Rs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_bold"
+        android:paddingLeft="@dimen/mainMargin"
+        android:paddingRight="@dimen/mainMargin"
+        android:text="Income"
+        android:textColor="@color/colorBlack" />
+
+    <EditText
+        android:id="@+id/incomeET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:fontFamily="@font/proximanova_regular"
+        android:hint="Income in Rs" />
+
+
+
+</LinearLayout>

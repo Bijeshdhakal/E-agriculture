@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forum.chat.chat.ChatActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite"
+        android:layout_above="@+id/inputRL"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/inputRL"
+        android:background="@color/colorPrimary"/>
+
+    <RelativeLayout
+        android:id="@+id/inputRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/inputMessageET"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@+id/sendMessageButton"
+            android:layout_height="wrap_content"
+            android:hint="Enter Message Here."
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorGrey"
+            android:background="@color/colorWhite"
+            android:textColorHint="@color/colorGrey"
+            android:padding="8dp"/>
+
+
+        <ImageButton
+            android:id="@+id/sendMessageButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:elevation="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:rotation="315"
+            app:srcCompat="@drawable/ic_send_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

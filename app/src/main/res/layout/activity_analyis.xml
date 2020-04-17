@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".analysis.AnalyisActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addDataFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_add_black_24dp"
+        app:fabSize="normal" />
+
+    <ImageView
+        android:id="@+id/noDataImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_no_data"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/dataLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/mainMargin"
+                android:background="@color/colorAccent"
+                android:padding="@dimen/mainMargin"
+                android:text="Income - Expense Chart"
+                android:textColor="@color/colorWhite" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/incomeExpenseLineChart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/mainMargin"
+                android:padding="@dimen/mainMargin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/mainMargin"
+                android:background="@color/colorAccent"
+                android:padding="@dimen/mainMargin"
+                android:text="Produced - Sold Goods Chart"
+                android:textColor="@color/colorWhite" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/goodsLineChart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/mainMargin"
+                android:padding="@dimen/mainMargin" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

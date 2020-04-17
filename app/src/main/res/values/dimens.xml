@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="mainMargin">8dp</dimen>
+    <dimen name="smallMargin">4dp</dimen>
+    <dimen name="fabMargin">16dp</dimen>
+
+
+    <dimen name="activity_horizontal_padding">8dp</dimen>
+    <dimen name="activity_vertical_padding">8dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="city_name">24sp</dimen>
+    <dimen name="weather_info">16sp</dimen>
+    <dimen name="weather_icon_large">70sp</dimen>
+    <dimen name="weather_icon_small">48sp</dimen>
+    <dimen name="weather_temperature_large">36sp</dimen>
+    <dimen name="weather_temperature_small">22sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

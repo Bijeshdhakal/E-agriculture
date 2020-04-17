@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/mainMargin"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/proximanova_regular"
+        android:padding="@dimen/smallMargin" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/mainMargin"
+        android:layout_marginLeft="@dimen/mainMargin"
+        android:layout_marginTop="@dimen/smallMargin"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/proximanova_regular"
+        android:padding="@dimen/smallMargin"  />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#A6355842"
+        android:fontFamily="@font/proxima_bold"
+        android:paddingLeft="@dimen/mainMargin"
+        android:paddingTop="@dimen/smallMargin"
+        android:paddingRight="@dimen/mainMargin"
+        android:paddingBottom="@dimen/smallMargin"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

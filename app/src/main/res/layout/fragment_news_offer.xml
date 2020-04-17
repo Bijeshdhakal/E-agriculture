@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".newsOffers.NewsOfferFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/programsViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                    android:id="@+id/dots_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="165dp"
+                    app:dotsColor="@color/colorAccent"
+                    app:dotsCornerRadius="8dp"
+                    app:dotsSize="@dimen/mainMargin"
+                    app:dotsSpacing="4dp"
+                    app:dotsWidthFactor="2.5" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/mainMargin"
+                android:paddingTop="@dimen/mainMargin"
+                android:paddingRight="@dimen/mainMargin"
+                android:paddingBottom="@dimen/smallMargin">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_news"
+                    android:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mainMargin"
+                    android:fontFamily="@font/proxima_bold"
+                    android:text="News"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/newsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingStart="12dp"
+                android:paddingLeft="@dimen/mainMargin"
+                android:paddingEnd="54dp"
+                android:paddingRight="@dimen/mainMargin" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/mainMargin">
+
+                <LinearLayout
+                    android:id="@+id/radioLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="@dimen/mainMargin"
+                    android:background="@color/colorAccent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:src="@drawable/ic_radio_black_24dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proxima_bold"
+                        android:text="Radio"
+                        android:textSize="26sp"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/weatherLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="@dimen/mainMargin"
+                    android:background="#03A9F4"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:src="@drawable/ic_thunder"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proxima_bold"
+                        android:text="Weather"
+                        android:textSize="26sp"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/forumLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="@dimen/mainMargin"
+                    android:background="#7E57C2"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:src="@drawable/ic_group_black_24dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proxima_bold"
+                        android:text="View Forum"
+                        android:textSize="26sp"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</FrameLayout>

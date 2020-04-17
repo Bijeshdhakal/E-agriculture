@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.bjshDkl.agriculture">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".analysis.AnalyisActivity"
+            android:label="Analysis"></activity>
+        <activity
+            android:name=".radio.RadioActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".insectDetail.InsectMinimizeDetailActivity" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".forum.chat.chat.ChatActivity"
+            android:label="Chat" />
+        <activity android:name=".forum.chat.forgetpassword.ForgetPasswordActivity" />
+        <activity android:name=".forum.chat.register.RegisterActivity" />
+        <activity android:name=".forum.chat.login.LoginActivity" />
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <receiver android:name="androidx.media.session.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

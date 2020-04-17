@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "891529771356",
+    "firebase_url": "https://e-agri-a2d26.firebaseio.com",
+    "project_id": "e-agri-a2d26",
+    "storage_bucket": "e-agri-a2d26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891529771356:android:41f364f0b17343ad",
+        "android_client_info": {
+          "package_name": "com.bjshDkl.agriculture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891529771356-iut2idceerfb4d5u3nlsfcnc69tih1ao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bjshDkl.agriculture",
+            "certificate_hash": "0af52158a13026bf80554d4d988d949fb6163b3d"
+          }
+        },
+        {
+          "client_id": "891529771356-974kkvr5g5d2h80o0ibskt33u7eh9la4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-2l_9gagGAVUsPSqHgPFGfE9SRBsj33s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891529771356-974kkvr5g5d2h80o0ibskt33u7eh9la4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

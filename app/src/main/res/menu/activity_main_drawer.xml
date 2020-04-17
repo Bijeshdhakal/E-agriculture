@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navHome"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/navWeather"
+        android:icon="@drawable/ic_weather"
+        android:title="Weather"/>
+
+    <item
+        android:id="@+id/navResource"
+        android:icon="@drawable/ic_resource"
+        android:title="Resources"/>
+
+    <item
+        android:id="@+id/navPricing"
+        android:icon="@drawable/ic_pricing"
+        android:title="Pricings"/>
+
+    <item
+        android:id="@+id/navForum"
+        android:icon="@drawable/ic_forum"
+        android:title="Forum"/>
+
+    <item
+        android:id="@+id/navPrediction"
+        android:title="Prediction"
+        android:icon="@drawable/ic_chart"/>
+
+</menu>

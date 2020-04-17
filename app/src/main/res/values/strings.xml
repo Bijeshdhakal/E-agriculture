@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">E - Agriculture</string>
+    <string name="title_home">Home</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_location">Location</string>
+
+
+    <string name="open_weather_maps_app_id">3a112a8ac257aff6f7c2961fcecf7c67</string>
+    <string name="weather_tmr">Tomorrow</string>
+    <string name="weather_wind">Wind</string>
+    <string name="weather_pressure">Pressure</string>
+    <string name="weather_humidity">Humidity</string>
+    <string name="weather_sunrise">Sunrise</string>
+    <string name="weather_sunset">Sunset</string>
+    <string name="weather_update">Update</string>
+
+    <string name="weather_sunny">&#xf00d;</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+
+    <string name="error_location">No weather data found for current location.</string>
+    <string name="error_empty">No data input found.</string>
+    <string name="error_network">No internet connection found.</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_stream">Radio station couldn\\\'t stream!</string>
+    <string name="live_broadcast">On Air</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+
+</resources>
